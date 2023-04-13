@@ -15,4 +15,129 @@ sources:
             tests:
               - unique
               - not_null
-                
+
+      - name: categories
+        description: Tabela com informações de categoria de produtos.
+        columns:
+          - name: category_id
+            description: Chave primária da tabela de Categorias.
+            tests:
+              - unique
+              - not_null
+
+      - name: customer_customer_demo
+        description: Tabela que linca a customer_demografics com a customers.
+        columns:
+          - name: customer_id
+            description: ID do consumidor
+            tests:
+              - not_null
+          - name: customer_type_id
+            description: ID do tipo do consumidor
+            tests:
+              - not_null
+
+      - name: customer_demographics
+        description: Tabela com informações demograficas do consumidor.
+        columns:
+          - name: customer_type_id
+            description: Chave primária da tabela customer_demographics.
+            tests:
+              - unique
+              - not_null
+      
+      - name: customers
+        description: Tabela com informações do consumidor.
+        columns:
+          - name: customer_id
+            description: Chave primária da tabela customer.
+            tests:
+              - unique
+              - not_null
+      
+      - name: employee_territories
+        description: Tabela que liga a tabela de employee com a tabela de territories.
+        columns:
+          - name: employee_id
+            description: Chave primária da tabela employee.
+            tests:
+              - not_null
+          - name: territory_id
+            description: Chave primária da tabela territory.
+            tests:
+              - not_null
+      
+      - name: order_details
+        description: Tabela com informações dos pedidos.
+        columns:
+          - name: order_id
+            description: Chave primária da tabela order.
+            tests:
+              - not_null
+          - name: product_id
+            description: Chave primária da tabela product.
+            tests:
+              - not_null
+
+      - name: orders
+        description: Tabela com informações dos pedidos.
+        columns:
+          - name: order_id
+            description: Chave primária da tabela order.
+            tests:
+              - not_null
+              - unique
+      
+      - name: products
+        description: Tabela com informações dos produtos.
+        columns:
+          - name: product_id
+            description: Chave primária da tabela product.
+            tests:
+              - not_null
+              - unique
+
+      - name: region
+        description: Tabela com informações da região.
+        columns:
+          - name: region_id
+            description: Chave primária da tabela region.
+            tests:
+              - not_null
+              - unique
+
+      - name: shippers
+        description: Tabela com informações das empresas de envio.
+        columns:
+          - name: shipper_id
+            description: Chave primária da tabela shippers.
+            tests:
+              - not_null
+              - unique
+      
+      - name: suppliers
+        description: Tabela com informações dos fornecedores.
+        columns:
+          - name: supplier_id
+            description: Chave primária da tabela suppliers.
+            tests:
+              - not_null
+              - unique
+      
+      - name: territories
+        description: Tabela com informações dos territórios.
+        columns:
+          - name: territory_id
+            description: Chave primária da tabela territories.
+            tests:
+              - not_null
+              - unique
+
+      - name: us_states
+        description: Tabela com informações dos estados dos EUA.
+        columns:
+          - name: state_id
+            description: Chave primária da tabela us_states.
+            tests:
+              - not_null
+              - unique
