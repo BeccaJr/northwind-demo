@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_funcionarios
+    description: Essa é a dimensão de funcionários
+    columns:
+      - name: sk_funcionarios
+        description: Essa é a chave surrogate key da tabela
+        tests:
+          - unique
+          - not_null
