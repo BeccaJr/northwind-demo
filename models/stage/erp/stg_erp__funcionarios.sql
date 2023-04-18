@@ -5,7 +5,7 @@ with
     )
     , renomear as (
         select 
-            cast(employee_id as int) as funcionario_id
+            cast(employee_id as int) as id_funcionario
             , cast(reports_to as int) as id_gerente
             , cast(concat(first_name, ' ', last_name) as string) as funcionario_nome
             , cast(birth_date as date) as funcionario_data_nascimento
