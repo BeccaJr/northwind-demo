@@ -40,7 +40,7 @@ with
     )
     , transformacoes as (
         select
-            row_number() over(order by id_produto) as sk_produtos
+            row_number() over(order by id_produto) as sk_produto
             , *
         from join_tabelas
     )

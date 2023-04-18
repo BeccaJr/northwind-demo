@@ -26,7 +26,7 @@ with
 
     , transformacoes as (
         select
-            row_number() over(order by id_funcionario) as sk_funcionarios
+            row_number() over(order by id_funcionario) as sk_funcionario
             , *
         from self_join_gerentes
     )

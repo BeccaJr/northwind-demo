@@ -1,10 +1,10 @@
 version: 2
 
 models:
-  - name: dim_funcionarios
-    description: Essa é a dimensão de funcionários
+  - name: fact_vendas
+    description: Essa é a fato de vendas
     columns:
-      - name: sk_funcionario
+      - name: sk_venda
         description: Essa é a chave surrogate key da tabela
         tests:
           - unique

@@ -4,7 +4,7 @@ models:
   - name: dim_produtos
     description: Essa é a dimensão de produtos
     columns:
-      - name: sk_produtos
+      - name: sk_produto
         description: Essa é a chave surrogate key da tabela
         tests:
           - unique
