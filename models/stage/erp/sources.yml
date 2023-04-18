@@ -15,3 +15,69 @@ sources:
             tests:
               - unique
               - not_null
+
+      - name: order_details
+        description: Tabela com informações dos pedidos.
+        columns:
+          - name: order_id
+            description: Chave primária da tabela order.
+            tests:
+              - not_null
+          - name: product_id
+            description: Chave primária da tabela product.
+            tests:
+              - not_null
+
+      - name: orders
+        description: Tabela com informações dos pedidos.
+        columns:
+          - name: order_id
+            description: Chave primária da tabela order.
+            tests:
+              - not_null
+              - unique
+      
+      - name: categories
+        description: Tabela com informações de categoria de produtos.
+        columns:
+          - name: category_id
+            description: Chave primária da tabela de Categorias.
+            tests:
+              - unique
+              - not_null
+
+      - name: customers
+        description: Tabela com informações do consumidor.
+        columns:
+          - name: customer_id
+            description: Chave primária da tabela customer.
+            tests:
+              - unique
+              - not_null
+
+      - name: suppliers
+        description: Tabela com informações dos fornecedores.
+        columns:
+          - name: supplier_id
+            description: Chave primária da tabela suppliers.
+            tests:
+              - not_null
+              - unique
+
+      - name: products
+        description: Tabela com informações dos produtos.
+        columns:
+          - name: product_id
+            description: Chave primária da tabela product.
+            tests:
+              - not_null
+              - unique
+
+      - name: shippers
+        description: Tabela com informações das Transportadoras.
+        columns:
+          - name: shipper_id
+            description: Chave primária da tabela shippers.
+            tests:
+              - not_null
+              - unique

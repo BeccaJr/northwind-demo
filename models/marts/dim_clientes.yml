@@ -1,10 +1,10 @@
 version: 2
 
 models:
-  - name: dim_funcionarios
-    description: Essa é a dimensão de funcionários
+  - name: dim_clientes
+    description: Essa é a dimensão de clientes
     columns:
-      - name: sk_funcionario
+      - name: sk_cliente
         description: Essa é a chave surrogate key da tabela
         tests:
           - unique
